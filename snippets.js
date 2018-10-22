@@ -25,3 +25,16 @@ function replaceAttribute(elementID, existingAttribute, replacementAttribute) {
         console.log('Element ' + existingAttribute + ' is not applied on ' + elementID + '!')
     }
 }
+
+function toggleElementStatus(elementID) {
+    /*
+    Function to toggle an elements disabled status
+     */
+    var element = document.getElementById(elementID);
+
+    if (element.disabled) {
+        element.disabled = false;
+    } else {
+        element.disabled = true;
+    }
+}
